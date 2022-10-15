@@ -22,11 +22,12 @@ function encuentraPares(array){
   // Devuelve un arreglo con los pares encontrados
   // en el arreglo de enteros pasado como parámetro
   // Tu código:
-  
+let pares = array.filter (function(num) {
+  return num%2==0
+} ) 
+return pares
 
 }
-
-
   
   function elevaAlCuadrado(array) {
   // Devuelve un arreglo con cada número del array
