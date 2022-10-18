@@ -8,13 +8,11 @@ function imprimirSumaNumeros() {
     // Imprime la suma de los números del 1 al 10
     // Pista: usa un acumulador
     // Tu código:
-    var array =[] ;
-    for (let i=1 ; i <=10 ; i++) {
-      array.push(i) ;
+    var acumulador =0 ;
+    for (i=1 ; i <=10 ; i ++) {
+      acumulador = acumulador +i
     }
-    var resultado = array.reduce((acc, elemento) => acc + elemento ,0) ;
-    return resultado ;
-    
+    return acumulador ;
  
 }
 
@@ -22,11 +20,11 @@ function encuentraPares(array){
   // Devuelve un arreglo con los pares encontrados
   // en el arreglo de enteros pasado como parámetro
   // Tu código:
-let pares = array.filter (function(num) {
-  return num%2==0
-} ) 
-return pares
-
+  
+    let pares = array.filter (function(num) {
+      return num%2==0
+    } ) 
+    return pares
 }
   
   function elevaAlCuadrado(array) {
@@ -35,8 +33,8 @@ return pares
   // Tu código:
   
 
-const elevados = array.map(i=>Math.pow(i,2)) 
-return elevados ;
+var numElevados = array.map(i=>Math.pow(i,2)) 
+return numElevados ;
 
 }
 
@@ -50,7 +48,7 @@ function sumaArray(array){
   // Devuelve el resultado de sumar todos los elementos
   // de un arreglo de enteros dado
   // Tu código:
-  const resultado = array.reduce((acc, el)=> acc + el, 0) ;
+ var resultado = array.reduce((acc, el)=> acc + el, 0) ;
   return resultado ;
 
 }
